@@ -23,9 +23,13 @@ enum Command {
     Append(usize),
 }
 
-mod my_module {
+pub mod my_module {
     use super::Command;
 
+    pub fn transformer(input: Vec<(String, Command)>) -> String {
+        let mut output: Vec<String> = [];
+        for tuple in input {}
+    }
     // TODO: Complete the function.
     // pub fn transformer(input: ???) -> ??? { ??? }
 }
